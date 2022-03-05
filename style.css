@@ -1,0 +1,106 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: poppins;
+    background-color: #EAD6F2;
+}
+input{
+    border: none;
+    font-family: poppins;
+}
+input:focus{
+    border:none;
+}
+
+/* WRAPPER */
+#wrapper{
+    padding-top:100px;
+    height: 100vh;
+    width: 100%;
+    border: solid 5px black;
+}
+/* TITLE */
+#titleContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#titleBox{
+    z-index: 1;
+    padding:10px;
+    background-color: #70D3C9;
+    border: solid 5px black;
+    border-radius: 10px;
+    box-shadow: 0px 5px;
+    width: 300px;
+    text-align: center;
+}
+#titleContainer h1{
+    font-size: 24px;
+}
+/* MAIN BOX */
+#mainContainer{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#mainBox{
+    position: absolute;
+    top: -30px;
+    border-radius: 10px;
+    width: 380px;
+    background-color: white;
+    border: solid 5px black;
+    height: 300px;
+    display:grid;
+}
+.fa-solid, .fas {
+    margin-right: 15px;
+}
+.innerTextContainer{
+    border-bottom: solid 3px black;
+    width: 215px;
+    padding-bottom:4px;
+}
+#loanAmountContainer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+#interestContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#yearsContainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/*Calculate Container*/
+#calculateContainer{
+    text-align: center;
+    margin-top: 320px;
+}
+button{
+    padding: 15px;
+    width: 300px;
+    border: solid 5px black;
+    box-shadow: 0px 5px;
+    border-radius: 10px;
+    font-family: poppins;
+    font-size: 24px;
+    background-color: white;
+}
+button:hover{
+    box-shadow:0px 0px;
+    margin-top:3px;
+    background-color:#FFF46A;
+    cursor: pointer;
+}
