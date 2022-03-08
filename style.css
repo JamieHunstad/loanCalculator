@@ -11,6 +11,7 @@ body{
 input{
     border: none;
     font-family: poppins;
+    background: none;
 }
 input:focus{
     border:none;
@@ -18,10 +19,9 @@ input:focus{
 
 /* WRAPPER */
 #wrapper{
-    padding-top:10px;
+    padding-top:19px;
     height: 100vh;
     width: 100%;
-    border: solid 5px black;
 }
 /* TITLE */
 #titleContainer{
@@ -32,9 +32,9 @@ input:focus{
 #titleBox{
     z-index: 1;
     padding: 10px;
-    background-color: #70D3C9;
-    border: solid 5px black;
-    border-radius: 20px;
+    background-color: #6fe4d8;
+    border: solid 5px #050049;
+    border-radius: 15px;
     box-shadow: 0px 5px;
     width: 238px;
     text-align: center;
@@ -53,10 +53,10 @@ input:focus{
 #mainBox{
     position: absolute;
     top: -30px;
-    border-radius: 20px;
+    border-radius: 15px;
     width: 287px;
     background-color: white;
-    border: solid 5px black;
+    border: solid 5px #050049;
     height: 230px;
     display: grid;
 }
@@ -64,7 +64,7 @@ input:focus{
     margin-right: 15px;
 }
 .innerTextContainer{
-    border-bottom: solid 3px black;
+    border-bottom: solid 3px #050049;
     width: 215px;
     padding-bottom:4px;
 }
@@ -93,15 +93,15 @@ input:focus{
 button{
     padding: 15px;
     width: 287px;
-    border: solid 5px black;
-    box-shadow: 0px 5px;
-    border-radius: 20px;
+    border: solid 5px #050049;
+    box-shadow: 0px 10px;
+    border-radius: 15px;
     font-family: poppins;
     font-size: 24px;
-    background-color: #fff45e;
+    background-color: #FFF46A;
 }
 button:hover{
-    background-color:#ffef16;
+    background-color:#fff239;
     cursor: pointer;
 }
 /* pressed
@@ -116,17 +116,20 @@ button:hover{
     width: 100%;
     display: flex;
     justify-content: center;
+    padding-top: 8px;
 }
 #resultsContainer h2{
     display: inline-block;
-    position: absolute;
+    height: 0px;
     bottom: 200px;
+    text-align: center;
+    margin-top: 10px;
 }
 #resultsBox{
-    border-radius: 20px;
+    border-radius: 15px;
     width: 287px;
-    background-color: white;
-    border: solid 5px black;
+    background-color: #ffffff;
+    border: solid 5px #050049;
     height: 200px;
     display: grid;
 }
