@@ -23,17 +23,17 @@
                     <form>
                         <div id="loanAmountContainer">
                             <div class="innerTextContainer">
-                                <i class="fa-solid fa-dollar-sign"></i><input onfocus="this.value=''" id="amount" value="Loan Amount">
+                                <i class="fa-solid fa-dollar-sign"></i><input autocomplete="off" onfocus="this.value=''" id="amount" value="Loan Amount">
                             </div>
                         </div>
                         <div id="interestContainer">
                             <div class="innerTextContainer">
-                                <i class="fa-solid fa-percent"></i><input onfocus="this.value=''" id="interest" value="Annual Interest">
+                                <i class="fa-solid fa-percent"></i><input autocomplete="off" onfocus="this.value=''" id="interest" value="Annual Interest">
                             </div>
                         </div>
                         <div id="yearsContainer">
                             <div class="innerTextContainer">
-                                <i class="fa-solid fa-hourglass"></i><input onfocus="this.value=''" id="years" value="Repayment Years">
+                                <i class="fa-solid fa-hourglass"></i><input autocomplete="off" onfocus="this.value=''" id="years" value="Repayment Years">
                             </div>
                         </div>
                     </form>
@@ -41,29 +41,29 @@
             </div>
             <div id="calculateContainer">
                 <div id="calculateBox">
-                    <button id="calculateButton">CALCULATE</button>
+                    <button class="style1" id="calculateButton">CALCULATE</button>
                 </div>
             </div>
-            <div id="loading">
-                <img src="load.gif">
+            <div id="loadingContainer">
+                <img id="loading" src="load.gif">
             </div>
             <div id="resultsContainer">
                 <div id="resultsBox">
                     <form>
                     <h2>Results</h2>
                         <div id="loanResultContainer">
-                            <div class="innerTextContainer">
-                                <input id="monthly-payment" onfocus="this.value=''" value="Monthly Payment">
+                            <div class="innerTextContainerResult">
+                                <span>Monthly Payment</span><input autocomplete="off" id="monthly-payment" onfocus="this.value=''" value="Monthly Payment">
                             </div>
                         </div>
                         <div id="interestResultContainer">
-                            <div class="innerTextContainer">
-                                <input id="total-payment" onfocus="this.value=''" value="Total Payment">
+                            <div class="innerTextContainerResult">
+                                <span>Total Payment</span><input autocomplete="off" id="total-payment" onfocus="this.value=''" value="">
                             </div>
                         </div>
                         <div id="yearsResultContainer">
-                            <div class="innerTextContainer">
-                                <input id="total-interest" onfocus="this.value=''" value="Total Interest">
+                            <div class="innerTextContainerResult">
+                                <span>Total Interest</span><input autocomplete="off" id="total-interest" onfocus="this.value=''" value="">
                             </div>
                         </div>
                     </form>        

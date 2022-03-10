@@ -96,7 +96,8 @@ input:focus{
     margin-top: 210px;
     margin-bottom: 15px;
 }
-button{
+
+.style1{
     padding: 15px;
     width: 287px;
     border: solid 5px #050049;
@@ -106,6 +107,17 @@ button{
     font-size: 24px;
     background-color: #FFF46A;
 }
+.style2{
+    padding: 15px;
+    width: 287px;
+    border: solid 5px #050049;
+    border-radius: 15px;
+    font-family: poppins;
+    font-size: 24px;
+    background-color: #FFF46A;
+    margin-top: 10px;
+}
+
 button:hover{
     background-color:#fff239;
     cursor: pointer;
@@ -123,6 +135,7 @@ button:hover{
     display: flex;
     justify-content: center;
     padding-top: 8px;
+    display: none;
 }
 #resultsContainer h2{
     display: inline-block;
@@ -133,7 +146,7 @@ button:hover{
 }
 #resultsBox{
     border-radius: 15px;
-    width: 287px;
+    width: 400px;
     background-color: #ffffff;
     border: solid 5px #050049;
     box-shadow: 0px 5px 5px #0000002e;
@@ -141,6 +154,17 @@ button:hover{
 #resultsBox form{
     display: grid;
     height:200px;
+}
+.innerTextContainerResult{
+    border-bottom: solid 3px #050049;
+    width: 355px;
+    padding-bottom:4px;
+}
+.innerTextContainerResult span{
+    margin-right: 10px;
+}
+.innerTextContainerResult input{
+    color: grey;
 }
 #loanResultContainer{
     display: flex;
@@ -157,11 +181,11 @@ button:hover{
     align-items: flex-start;
     justify-content: center;
 }
-#loading{
+#loadingContainer{
     display: flex;
     justify-content: center;
 }
-#loading img{
+#loading{
     width:20%;
     display: none;
 }

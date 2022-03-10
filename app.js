@@ -1,7 +1,19 @@
-document.getElementById('calculateButton').addEventListener('click', calculateResults);
+let calcButton = document.getElementById('calculateButton');
+
+calcButton.addEventListener('click', function (e){
+    // Hide Results
+    document.getElementById('resultsContainer').style.display = "none";
+
+    // Show Loader
+    document.getElementById("loading").style.display = "block";
+
+    setTimeout(calculateResults, 2000);
+});
+calcButton.addEventListener('mousedown', buttonDown);
+calcButton.addEventListener('mouseup', buttonUp);
 
 // Calculate Results
-function calculateResults(e){
+function calculateResults(){
     console.log("Calculating...");
 
     const amount = document.getElementById('amount');
@@ -23,6 +35,10 @@ function calculateResults(e){
         monthlyPayment.value = monthly.toFixed(2);
         totalPayment.value = (monthly * calculatedPayments).toFixed(2);
         totalInterest.value = ((monthly * calculatedPayments) - principal).toFixed(2);
+
+        document.getElementById('resultsContainer').style.display = "flex";
+        document.getElementById("loading").style.display = "none";
+
     }else{
         showError('Please Check Your Numbers');
     }
@@ -33,6 +49,10 @@ function calculateResults(e){
 
 // show Error
 function showError(error){
+
+    document.getElementById('resultsContainer').style.display = "none";
+    document.getElementById("loading").style.display = "none";
+
     // Create a div
     const errorDiv = document.createElement('div');
 
@@ -55,4 +75,14 @@ function showError(error){
 // Clear Error
 function clearError() {
     document.querySelector('.errorDiv').remove();
+}
+
+// Button Pressed down
+function buttonDown(){
+    calcButton.classList.remove('.style1');
+    calcButton.className = "style2";
+}
+function buttonUp(){
+    calcButton.classList.remove("style2");
+    calcButton.className = "style1";
 }
