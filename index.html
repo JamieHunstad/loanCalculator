@@ -20,49 +20,57 @@
             
             <div id="mainContainer">
                 <div id="mainBox">
-                    <div id="loanAmountContainer">
-                        <div class="innerTextContainer">
-                            <i class="fa-solid fa-dollar-sign"></i><input value="Loan Amount">
+                    <form>
+                        <div id="loanAmountContainer">
+                            <div class="innerTextContainer">
+                                <i class="fa-solid fa-dollar-sign"></i><input id="amount" value="Loan Amount">
+                            </div>
                         </div>
-                    </div>
-                    <div id="interestContainer">
-                        <div class="innerTextContainer">
-                            <i class="fa-solid fa-percent"></i><input value="Annual Interest">
+                        <div id="interestContainer">
+                            <div class="innerTextContainer">
+                                <i class="fa-solid fa-percent"></i><input id="interest" value="Annual Interest">
+                            </div>
                         </div>
-                    </div>
-                    <div id="yearsContainer">
-                        <div class="innerTextContainer">
-                            <i class="fa-solid fa-hourglass"></i><input value="Repayment Years">
+                        <div id="yearsContainer">
+                            <div class="innerTextContainer">
+                                <i class="fa-solid fa-hourglass"></i><input id="years" value="Repayment Years">
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
             <div id="calculateContainer">
                 <div id="calculateBox">
-                    <button>CALCULATE</button>
+                    <button id="calculateButton">CALCULATE</button>
                 </div>
+            </div>
+            <div id="loading">
+                <img src="load.gif">
             </div>
             <div id="resultsContainer">
                 <div id="resultsBox">
+                    <form>
                     <h2>Results</h2>
-                    <div id="loanResultContainer">
-                        <div class="innerTextContainer">
-                            <i class="fa-solid fa-dollar-sign"></i><input value="Loan Amount">
+                        <div id="loanResultContainer">
+                            <div class="innerTextContainer">
+                                <input id="monthly-payment" value="Monthly Payment">
+                            </div>
                         </div>
-                    </div>
-                    <div id="interestResultContainer">
-                        <div class="innerTextContainer">
-                            <i class="fa-solid fa-percent"></i><input value="Annual Interest">
+                        <div id="interestResultContainer">
+                            <div class="innerTextContainer">
+                                <input id="total-payment" value="Total Payment">
+                            </div>
                         </div>
-                    </div>
-                    <div id="yearsResultContainer">
-                        <div class="innerTextContainer">
-                            <i class="fa-solid fa-hourglass"></i><input value="Repayment Years">
+                        <div id="yearsResultContainer">
+                            <div class="innerTextContainer">
+                                <input id="total-interest"value="Total Interest">
+                            </div>
                         </div>
-                    </div>
+                    </form>        
                 </div>
             </div>
          </div>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>
