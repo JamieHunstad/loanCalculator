@@ -45,8 +45,6 @@ function calculateResults(){
 }
 
 
-
-
 // show Error
 function showError(error){
 
